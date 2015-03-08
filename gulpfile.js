@@ -1,7 +1,11 @@
 var gulp = require('gulp');
+
+var rimraf = require('rimraf');
+
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
-var rimraf = require('rimraf');
+var minifyCSS = require('gulp-minify-css');
+
 
 gulp.task('rmrf', function () {
     rimraf.sync('./build');
@@ -13,6 +17,7 @@ gulp.task('sass', function () {
                 './static/css/*.scss'])
         .pipe(sass())
         .pipe(concat('css.css'))
+        .pipe(minifyCSS())
         .pipe(gulp.dest('./build/css'));
 });
 
