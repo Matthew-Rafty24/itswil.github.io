@@ -1,3 +1,10 @@
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
 h1,
 p {
     color: $color-text;
@@ -23,13 +30,10 @@ h3 {
     font-size: 1.2em;
 }
 
-p {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.4;
-}
+a {
+    color: $color-link;
 
-li {
-    line-height: 1.4;
+    &:hover {
+        color: $color-link;
+    }
 }
