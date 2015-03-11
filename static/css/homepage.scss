@@ -15,4 +15,11 @@
     }
 }
 
+@media (max-width: 500px) {
+    .homepage {
+        .wrap-article {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+    }
 }
