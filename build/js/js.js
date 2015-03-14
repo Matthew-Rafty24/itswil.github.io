@@ -1,0 +1,1 @@
+var Enlightenment=function(){var n=["blue","green","orange","red","purple","yellow"],e=function(){var e=document.body,t=Math.floor(Math.random()*n.length);e.className+=" enlighten enlighten-"+n[t]};return{init:e}}();setTimeout(Enlightenment.init,1);
