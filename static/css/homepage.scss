@@ -1,3 +1,10 @@
+body {
+    transition: background-color 10s ease;
+    a {
+        transition: color 10s ease;
+    }
+}
+
 .homepage {
     .wrap-article {
         margin-bottom: 100px;
