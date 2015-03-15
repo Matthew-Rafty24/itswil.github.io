@@ -1,19 +1,23 @@
 var Enlightenment = (function() {
 
-    var COLORS = [
-        'blue',
-        'green',
-        'orange',
-        'red',
-        'purple',
-        'yellow'
-    ];
-
     var init = function() {
-        var body = document.body;
-        var randomNumber = Math.floor(Math.random() * COLORS.length);
+        transcend();
+    };
 
-        body.className += ' enlighten enlighten-' + COLORS[randomNumber];
+    var getHsl = function(h, s, l) {
+        return 'hsl('+ h + ',' + s + '%,' + l + '%)';
+    };
+
+    var transcend = function() {
+        var hue = Math.random() * 360;
+
+        var body = document.body;
+        body.style.backgroundColor = getHsl(hue, 100, 98);
+
+        var bodyLinks = document.querySelectorAll('body a');
+        for (var i = 0; i < bodyLinks.length; i++) {
+            bodyLinks[i].style.color = getHsl(hue, 100, 30);
+        }
     };
 
     return {
