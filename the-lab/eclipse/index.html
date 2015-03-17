@@ -1,0 +1,60 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Eclipse Stopwatch</title>
+	<meta name="description" content="" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/css.css" />
+	<link rel="icon shortcut" type="image/gif" href="img/fv.png" />
+	<link rel="apple-touch-icon" href="img/144x144.png">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/js.js"></script>
+</head>
+<body>
+	
+	<header role="banner">
+		<h1><span class="brand-name">Eclipse</span> Stopwatch</h1>
+	</header>
+	
+	<div class="content" role="main">
+		<div class="stopwatch ready no-select">
+			<div class="display">
+
+				<div class="value">
+					<span class="minutes digits">0</span><span class="seconds digits">00</span><span class="milliseconds digits">.00</span>
+				</div>
+
+			</div>
+		</div>
+	</div><!-- content -->
+
+	<aside role="complementary">
+		<dl class="key">
+			<dt>Start/Stop</dt>
+			<dd>Space</dd>
+			<dt>Reset</dt>
+			<dd>Enter</dd>
+			<dt>Toggle Delay</dt>
+			<dd>Shift D</dd>
+		</dl>
+	</aside>
+	
+	<div class="delay-notification">
+		<span class="on delay">Delay <span class="status">ON</span></span>
+		<span class="off delay">Delay <span class="status">OFF</span></span>
+	</div>
+	
+	<audio id="sound-start" src="mp3/Proxima.ogg" preload="auto"></audio>
+	<audio id="sound-pause" src="mp3/Proxima-reverse.ogg" preload="auto"></audio>
+	<audio id="sound-interval" src="mp3/Altair.ogg" preload="auto"></audio>
+	<audio id="sound-minute" src="mp3/F1_MissedCall.ogg" preload="auto"></audio>
+	<audio id="sound-clear" src="mp3/CaffeineSnake.ogg" preload="auto"></audio>
+
+</body>
+</html>

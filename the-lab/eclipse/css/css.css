@@ -1,0 +1,129 @@
+/* Global */
+html {background:#222 url('../img/bg.png');color:#f9f9f9;font:1em 'Roboto',Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased;}
+a {color:#444;text-decoration:underline;}
+a:link {}
+a:visited {}
+a:hover {text-decoration:underline;}
+a:active {}
+:focus {outline:none;}
+::selection {background:#ddd;}
+::-moz-selection {background:#ddd;}
+
+/* Helper */
+.fixed-width {margin:0 auto;overflow:hidden;width:1000px;}
+.no-select {-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+
+/* Custom */
+header[role="banner"] {left:1em;position:absolute;top:1em;}
+h1 {font-size:1.7em;font-weight:300;word-spacing:-6px;}
+h1 .brand-name {font-weight:700;}
+
+.content[role="main"] {margin:0 auto;}
+.stopwatch {background:#222;border-radius:100%;border:6px solid #f9f9f9;cursor:pointer;height:600px;margin:auto;text-align:center;width:600px;}
+.stopwatch .value {display:inline-block;font-size:12em;margin:auto;overflow:hidden;padding-top:27%;text-shadow:0 0 2px #f9f9f9;}
+.stopwatch .value .digits {display:block;float:left;}
+.stopwatch .value .milliseconds {font-size:0.5em;font-weight:300;margin-top:1.05em;text-align:left;width:130px;}
+.stopwatch .value .seconds {font-weight:100;width:210px;}
+.stopwatch .value .minutes {font-weight:700;width:115px;}
+
+aside[role="complementary"] {position:absolute;right:1em;top:1.2em;}
+.key {text-align:right;}
+.key dt, .key dd {display:inline-block;}
+.key dt {width:60%;}
+.key dd {font-weight:700;width:16%;}
+
+.delay-notification {bottom:1em;left:1em;position:absolute;}
+.delay-notification .delay {display:none;}
+.delay-notification .status {font-weight:700;}
+
+/* Pulsate green ring */
+.stopwatch.green {border:6px solid #49ff80;}
+@-webkit-keyframes pulse-green {
+from {-webkit-box-shadow:0 0 200px #222;}
+50% {-webkit-box-shadow:0 0 200px #49ff80;}
+to {-webkit-box-shadow:0 0 200px #222;}
+}
+.stopwatch.running.green {
+-webkit-animation-name:pulse-green;
+-webkit-animation-duration:2s;
+-webkit-animation-iteration-count:infinite;
+}
+
+/* Pulsate blue ring */
+.stopwatch.blue {border:6px solid #68c1ff;}
+@-webkit-keyframes pulse-blue {
+from {-webkit-box-shadow:0 0 200px #222;}
+50% {-webkit-box-shadow:0 0 200px #68c1ff;}
+to {-webkit-box-shadow:0 0 200px #222;}
+}
+.stopwatch.running.blue {
+-webkit-animation-name:pulse-blue;
+-webkit-animation-duration:2s;
+-webkit-animation-iteration-count:infinite;
+}
+
+/* Pulsate red ring */
+.stopwatch.red {border:6px solid #ff4b4b;}
+@-webkit-keyframes pulse-red {
+from {-webkit-box-shadow:0 0 200px #222;}
+50% {-webkit-box-shadow:0 0 200px #ff4b4b;}
+to {-webkit-box-shadow:0 0 200px #222;}
+}
+.stopwatch.running.red {
+-webkit-animation-name:pulse-red;
+-webkit-animation-duration:2s;
+-webkit-animation-iteration-count:infinite;
+}
+
+/* Pulsate orange ring */
+.stopwatch.orange {border:6px solid #ff8a3c;}
+@-webkit-keyframes pulse-orange {
+from {-webkit-box-shadow:0 0 200px #222;}
+50% {-webkit-box-shadow:0 0 200px #ff8a3c;}
+to {-webkit-box-shadow:0 0 200px #222;}
+}
+.stopwatch.running.orange {
+-webkit-animation-name:pulse-orange;
+-webkit-animation-duration:2s;
+-webkit-animation-iteration-count:infinite;
+}
+
+/* Pulsate purple ring */
+.stopwatch.purple {border:6px solid #ba71ff;}
+@-webkit-keyframes pulse-purple {
+from {-webkit-box-shadow:0 0 200px #222;}
+50% {-webkit-box-shadow:0 0 200px #ba71ff;}
+to {-webkit-box-shadow:0 0 200px #222;}
+}
+.stopwatch.running.purple {
+-webkit-animation-name:pulse-purple;
+-webkit-animation-duration:2s;
+-webkit-animation-iteration-count:infinite;
+}
+
+/* Pulsate yellow ring */
+.stopwatch.yellow {border:6px solid #fff554;}
+@-webkit-keyframes pulse-yellow {
+from {-webkit-box-shadow:0 0 200px #222;}
+50% {-webkit-box-shadow:0 0 200px #fff554;}
+to {-webkit-box-shadow:0 0 200px #222;}
+}
+.stopwatch.running.yellow {
+-webkit-animation-name:pulse-yellow;
+-webkit-animation-duration:2s;
+-webkit-animation-iteration-count:infinite;
+}
+
+/* Pulsate paused time */
+@-webkit-keyframes pulse-value {
+from {color:#f9f9f9;}
+40% {color:#555;}
+to {color:#f9f9f9;}
+}
+.stopwatch.paused .value {
+-webkit-animation-name:pulse-value;
+-webkit-animation-duration:0.75s;
+-webkit-animation-iteration-count:3;
+}
+
+footer[role="contentinfo"] {}

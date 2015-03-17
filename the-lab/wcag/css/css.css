@@ -1,0 +1,39 @@
+/* Global */
+html {background:#fdfdfd;color:#111;font-family:Georgia,Times,serif;overflow-y:scroll;-webkit-font-smoothing:antialiased;line-height:1.4;}
+a {color:#444;text-decoration:underline;}
+a:link {}
+a:visited {}
+a:hover {text-decoration:underline;}
+a:active {}
+:focus {outline:none;}
+::selection {background:#ddd;}
+::-moz-selection {background:#ddd;}
+
+/* Objects */
+.fixed-width {margin:0 auto;overflow:hidden;width:1000px;}
+.no-select {-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+
+/* Custom */
+header[role="banner"] {margin:1em auto 0;text-align:center;width:550px;}
+header .heading {font:normal normal bold 7.1em 'Oswald',Arial,Helvetica,sans-serif;}
+
+.content[role="main"] {margin:4em auto;width:550px;}
+.content h2 {font-size:1.4em;font-style:italic;line-height:2;margin-top:1.6em;}
+.content ul {background:#efefef;border:1px solid #dfdfdf;border-radius:2px;margin:1em 1em;padding:0.5em 1em;}
+.content li {list-style-position:inside;}
+
+footer {}
+
+@media only screen and (max-width:480px) {
+header[role="banner"] {margin:1em 0.5em 0;width:auto;}
+header .heading {font-size:3.6em;}
+header h1 {font-size:0.9em;}
+
+.content[role="main"] {margin:1em 1em;width:auto;}
+}
+
+@media only screen and (min-width:481px) and (max-width:549px) {
+header[role="banner"] {margin:1em 0.5em;width:auto;}
+header .heading {font-size:5.4em;}
+.content[role="main"] {margin:1em 0.5em;width:auto;}
+}
